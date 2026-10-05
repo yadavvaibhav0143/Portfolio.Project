@@ -8,7 +8,7 @@ This repository contains my personal portfolio website showcasing SQL, Excel, an
 - JavaScript
 
 ## Live Website
-<GitHub Pages URL>
+[🔗 View Live Portfolio](https://yadavvaibhav0143.github.io/Portfolio.Project/)
 
 ## GitHub
 https://github.com/yadavvaibhav0143
