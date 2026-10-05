@@ -1,154 +1,114 @@
-<!DOCTYPE HTML>
-<!--
-	PORTFOLIO PROJECT
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio Project</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Vaibhav Yadav — Technical Business Analyst portfolio.">
+<meta property="og:title" content="Vaibhav Yadav | Technical Business Analyst">
+<meta property="og:description" content="Requirements engineering, process design, SQL, data analysis, APIs and UAT.">
+<title>Vaibhav Yadav | Technical Business Analyst</title>
+<style>
+:root{--bg:#f5f4f1;--card:#fff;--ink:#171717;--muted:#66635d;--line:#d9d6cf;--accent:#b13a2e;--soft:#eeece7;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,Segoe UI,Arial,sans-serif}
+a{color:inherit}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:10;background:#f5f4f1f5;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:800;letter-spacing:.08em;text-decoration:none;font-size:.84rem}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.8rem;font-weight:700}
+nav li a{text-decoration:none;color:var(--muted)}nav li a:hover{color:var(--accent)}
+.hero{min-height:76vh;display:flex;align-items:center;border-bottom:1px solid var(--line);padding:80px 0}
+.eyebrow,.type,.num{color:var(--accent);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.72rem}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+h1{font-size:clamp(3.2rem,8vw,6.7rem);line-height:.9;letter-spacing:-.055em;margin:14px 0 24px}
+.hero h2{font:700 clamp(1.25rem,2.5vw,1.9rem)/1.2 Inter,Segoe UI,Arial,sans-serif;margin:0 0 18px}
+.hero p,.lead{max-width:760px;color:var(--muted);font-size:1.05rem}
+.pills,.tags,.tools,.actions{display:flex;flex-wrap:wrap;gap:8px}
+.pill,.tag,.tool{border:1px solid var(--line);background:var(--card);padding:6px 10px;font-size:.72rem;font-weight:700}
+.actions{margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 17px;border:1px solid var(--ink);text-decoration:none;text-transform:uppercase;letter-spacing:.04em;font-size:.75rem;font-weight:800}
+.btn.primary{background:var(--ink);color:#fff}.btn:hover{border-color:var(--accent);color:var(--accent)}
+section{padding:95px 0;border-bottom:1px solid var(--line)}
+.head{display:grid;grid-template-columns:180px 1fr;gap:35px;margin-bottom:45px}
+h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1;margin:0 0 14px;letter-spacing:-.035em}
+.head p{color:var(--muted);max-width:700px;margin:0}
+.about{display:grid;grid-template-columns:1.35fr .65fr;gap:65px}.about p{font-size:1.03rem}
+.cap{border-top:1px solid var(--line)}.cap div{padding:12px 0;border-bottom:1px solid var(--line);font-weight:800;font-size:.82rem}
+.cases{display:grid;gap:25px}.case{display:grid;grid-template-columns:105px 1fr;background:var(--card);border:1px solid var(--line);box-shadow:0 10px 30px #0000000a}
+.case .num{padding:27px;border-right:1px solid var(--line);font:700 1.6rem Georgia,serif}.casebody{padding:30px}
+.case h3{font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.08;margin:7px 0 13px}.case p,.project p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{background:var(--card);border:1px solid var(--line);padding:24px;min-height:235px;display:flex;flex-direction:column}.project h3{font-size:1.4rem;line-height:1.15;margin:10px 0}.project a{margin-top:auto;font-size:.74rem;font-weight:800;text-decoration:none;text-transform:uppercase}.project .actions{flex-direction:column;align-items:flex-start;margin-top:auto;gap:10px}.project .actions a{margin-top:0}
+.toolbox{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.toolgroup{background:var(--card);padding:28px}.toolgroup h3{font:800 .78rem Inter,Segoe UI,Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em}
+.exp{background:var(--card);border:1px solid var(--line)}.row{display:grid;grid-template-columns:190px 1fr;gap:30px;padding:28px;border-bottom:1px solid var(--line)}.row:last-child{border:0}.date{font-size:.76rem;color:var(--muted);font-weight:700}.row h3{font-size:1.45rem;margin:0 0 4px}.role{color:var(--accent);font-weight:800;font-size:.78rem;margin-bottom:12px}.row ul{color:var(--muted);margin:0;padding-left:18px}
+.contact{background:var(--ink);color:#fff;border:0}.contact .head p{color:#c8c5be}.contact .num{color:#c8c5be}.contact h2{color:#fff}.email{font:clamp(1.4rem,4vw,3rem) Georgia,serif;text-decoration:none;border-bottom:1px solid #ffffff55}.contact .btn{color:#fff;border-color:#fff}.contact .btn.primary{background:#fff;color:var(--ink)}
+footer{background:var(--ink);color:#aaa;border-top:1px solid #333;padding:20px 0;font-size:.7rem}footer .wrap{display:flex;justify-content:space-between}
+@media(max-width:850px){nav .nav{flex-direction:column;align-items:flex-start;padding:12px 0}.nav ul{overflow:auto;width:100%;padding-bottom:3px}.about,.head{grid-template-columns:1fr;gap:18px}.grid{grid-template-columns:repeat(2,1fr)}.case{grid-template-columns:1fr}.case .num{border-right:0;border-bottom:1px solid var(--line);padding:15px 24px}.row{grid-template-columns:1fr;gap:6px}}
+@media(max-width:600px){.wrap{width:min(calc(100% - 28px),var(--max))}.hero{min-height:auto;padding:70px 0}.grid,.toolbox{grid-template-columns:1fr}section{padding:70px 0}footer .wrap{flex-direction:column;gap:5px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="brand" href="#home">PORTFOLIO PROJECT</a><ul>
+<li><a href="#home">Home</a></li><li><a href="#case-studies">Case Studies</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+</ul></div></nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<header class="hero" id="home"><div class="wrap">
+<div class="eyebrow">Technical Business Analyst</div>
+<h1>Vaibhav<br>Yadav</h1>
+<h2>Requirements Engineering · Process Design · SQL &amp; Data Analysis · API &amp; System Understanding</h2>
+<p>Business Analyst focused on translating business needs into structured requirements, workflows, data-driven insights, and technology-ready solutions.</p>
+<div class="pills"><span class="pill">Healthcare</span><span class="pill">Insurance</span><span class="pill">Merchant Payments</span><span class="pill">SQL &amp; Analytics</span></div>
+<div class="actions"><a class="btn primary" href="#case-studies">View Case Studies</a><a class="btn" href="https://github.com/yadavvaibhav0143" target="_blank">GitHub</a><a class="btn" href="https://www.linkedin.com/in/vaibhavrao143/" target="_blank">LinkedIn</a></div>
+</div></header>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Portfolio
-						</h1>
-						<p>Utilized SQL, Tableau, Power BI, and Excel for data analysis, visualization, and reporting, creating dashboards,</br>
-							optimizing databases, and generating actionable insights for improved business decisions.</a>
-						</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+<main>
+<section id="about"><div class="wrap"><div class="head"><div class="num">01 / About</div><div><h2>Business context, translated into technology.</h2><p>A concise overview of the portfolio positioning.</p></div></div>
+<div class="about"><div><p>I bring experience in healthcare operations and technology-enabled business processes, supported by hands-on Business Analyst case studies across healthcare, commercial insurance, and merchant payments.</p><p>My work covers requirements engineering, AS-IS / TO-BE process analysis, functional requirements, user stories, data modelling, API understanding, SQL analysis, UAT, and delivery documentation.</p><p>I focus on connecting business problems with practical technology solutions and creating documentation that can be understood by business, product, engineering, and QA stakeholders.</p></div><div class="cap"><div>Requirements Engineering</div><div>Process Analysis</div><div>Data Analysis</div><div>API &amp; Integration</div><div>SQL &amp; Data Modelling</div><div>UAT &amp; Delivery</div></div></div>
+</div></section>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Projects</a>
-					</header>
+<section id="case-studies"><div class="wrap"><div class="head"><div class="num">02 / Case Studies</div><div><h2>Featured work</h2><p>Three end-to-end case studies demonstrating requirements, process, data, integration, and delivery thinking.</p></div></div>
+<div class="cases">
+<article class="case"><div class="num">01</div><div class="casebody"><div class="type">Healthcare SaaS</div><h3>Healthcare Provider Onboarding System</h3><p>Designed a standardized provider onboarding workflow addressing manual verification, operational handoffs, SLA visibility, exception handling, and provider activation.</p><div class="tags"><span class="tag">BRD / FRD</span><span class="tag">Process Design</span><span class="tag">User Stories</span><span class="tag">RTM</span><span class="tag">Data Model</span><span class="tag">API</span><span class="tag">SQL</span><span class="tag">UAT</span></div><a class="btn" href="https://github.com/yadavvaibhav0143/Healthcare-Provider-Onboarding-Transformation" target="_blank">View Case Study</a></div></article>
+<article class="case"><div class="num">02</div><div class="casebody"><div class="type">Commercial Insurance</div><h3>Commercial Insurance Policy Comparison &amp; Risk Insights</h3><p>Designed a policy comparison and risk-insights solution covering policy document analysis, coverage-gap identification, clause taxonomy &amp; standardization, auditability, and risk analysis.</p><div class="tags"><span class="tag">Requirements</span><span class="tag">Process Flow</span><span class="tag">Data Model</span><span class="tag">API</span><span class="tag">SQL</span><span class="tag">Dashboard</span><span class="tag">UAT</span></div><a class="btn" href="https://github.com/yadavvaibhav0143/commercial-insurance-policy-comparison-platform" target="_blank">View Case Study</a></div></article>
+<article class="case"><div class="num">03</div><div class="casebody"><div class="type">FinTech / Payments</div><h3>Merchant Onboarding, Payment Processing &amp; Risk Management</h3><p>Designed an integrated merchant operations workflow covering merchant verification, terminal provisioning, payment processing, fraud assessment, settlement, and operational reporting.</p><div class="tags"><span class="tag">BRD / FRD</span><span class="tag">Workflow</span><span class="tag">User Stories</span><span class="tag">API</span><span class="tag">Data Model</span><span class="tag">SQL</span><span class="tag">UAT</span></div><a class="btn" href="https://github.com/yadavvaibhav0143/Merchant-Onboarding-Payment-Processing-Risk" target="_blank">View Case Study</a></div></article>
+</div></div></section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Data Queries</a></li>
-							<li><a href="generic.html">Dashboards</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/vaibhavrao143/" class="icon brands fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/yadavvaibhav0143" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+<section id="projects"><div class="wrap"><div class="head"><div class="num">03 / Projects</div><div><h2>Supporting analytics &amp; SQL work</h2><p>Supporting projects demonstrating SQL, data analysis, visualization, data cleaning, and business KPI analysis.</p></div></div>
+<div class="grid">
+<article class="project"><div class="type">SQL Server · KPI Analysis</div><h3>Banking Portfolio Analysis</h3><p>Customer and account performance analysis using growth, engagement, churn, cross-sell, LTV, CAC, and portfolio KPIs.</p><a href="https://github.com/yadavvaibhav0143/SQL-SA.portfolio" target="_blank">View Project →</a></article>
 
-				<!-- Main -->
-					<div id="main">
+<article class="project"><div class="type">SQL Server · Data Cleaning</div><h3>Nashville Housing Data Cleaning</h3><p>SQL-based preparation covering standardization, missing values, address parsing, duplicate handling, and validation.</p><a href="https://github.com/yadavvaibhav0143/Data_Cleaning" target="_blank">View Project →</a></article>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/yadavvaibhav0143/advanced-sql-ecommerce-analytics">Advanced_SQL Ecommerce Analytics
+<article class="project"><div class="type">Excel · Data Analysis</div><h3>Bike Buyers Analysis</h3><p>Customer purchasing analysis using data cleaning, pivot tables, and visualizations to identify segment-level purchasing patterns.</p><a href="https://github.com/yadavvaibhav0143/Excel_DataAnalysis" target="_blank">View Project →</a></article>
 
-									</a></h2>
-									<p>This project demonstrates advanced SQL techniques using a PostgreSQL database for an e-commerce business. It analyzes customer behavior, sales performance, product trends, payment transactions, and marketing attribution to generate business insights through SQL.
-									</p>
-								</header>
-								<a href="https://github.com/yadavvaibhav0143/advanced-sql-ecommerce-analytics" class="image main"><img src="https://assets.insightmediagroup.io/media/wp-content/uploads/2024/07/1cTSJ2xnvEeUg4PXlMWkaFw-scaled.jpeg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/yadavvaibhav0143/advanced-sql-ecommerce-analytics" class="button large">View Project</a></li>
-								</ul>
-							</article>
+<article class="project"><div class="type">PostgreSQL · SQL · Business Analytics</div><h3>Advanced PostgreSQL E-Commerce Analytics Engine</h3><p>End-to-end SQL analysis covering customer behaviour, sales performance, product trends, payments, and marketing attribution.</p><div class="actions"><a href="https://github.com/yadavvaibhav0143/advanced-sql-ecommerce-analytics" target="_blank">View Project →</a><a href="https://public.tableau.com/app/profile/vaibhav.yadav6144/viz/sql_analytics_Dash/Dashboard1" target="_blank">View Tableau Dashboard →</a></div></article>
 
+<article class="project"><div class="type">Excel · Tableau · Workforce Analytics</div><h3>HR Employee Analysis</h3><p>Interactive analysis of workforce demographics, hiring trends, department distribution, compensation, and employee performance.</p><div class="actions"><a href="https://github.com/yadavvaibhav0143/HR_EmployeeAnalysisReport" target="_blank">View Project →</a><a href="https://public.tableau.com/app/profile/vaibhav.yadav6144/viz/HRDashboard_17258673729990/HRSummary" target="_blank">View Tableau Dashboard →</a></div></article>
 
+<article class="project"><div class="type">SQL Server · Tableau · Sales Analytics</div><h3>Pizza Sales Analysis</h3><p>Sales analysis covering revenue, average order value, sales trends, category performance, and product-level performance.</p><div class="actions"><a href="https://github.com/yadavvaibhav0143/PizzaSales_Tableau" target="_blank">View Project →</a><a href="https://public.tableau.com/app/profile/vaibhav.yadav6144/viz/PizzaSales_Report_Tableau/Home" target="_blank">View Tableau Dashboard →</a></div></article>
 
-						
-					<!-- Posts -->
-							<section class="posts">
-							<article>
-								<header class="major">
-									<h2><a href="https://github.com/yadavvaibhav0143/Data_Exploration">COVID-19 Data Exploration
-									</a></h2>
-									<p>This project explores global COVID-19 trends using SQL Server. The analysis focuses on cases, deaths, vaccination progress, and population-based metrics to identify trends and compare countries using SQL queries and data exploration techniques.
-									</p>
-								</header>
-								<a href="https://github.com/yadavvaibhav0143/Data_Exploration" class="image main"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Vvisx3TvU4GvE66X83vlBKBxFe11CbQZxQ&s" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/yadavvaibhav0143/Data_Exploration" class="button large">View Project</a></li>
-								</ul>
-							</article>
+<article class="project"><div class="type">SQL Server · Tableau · Data Analysis</div><h3>COVID-19 Data Exploration &amp; Global Insights Dashboard</h3><p>COVID-19 analysis covering cases, deaths, vaccination progress, and population-based metrics, paired with an interactive Tableau dashboard for country comparisons, trends, and geographic insights.</p><div class="actions"><a href="https://github.com/yadavvaibhav0143/Data_Exploration" target="_blank">View SQL Project →</a><a href="https://public.tableau.com/app/profile/vaibhav.yadav6144/viz/COVID-19GlobalInsightsDashboard_/COVID-19GlobalInsightsDashboard" target="_blank">View Tableau Dashboard →</a></div></article>
 
-						
-								<article>
-									<header>
-										<h2><a href="https://github.com/yadavvaibhav0143/Data_Cleaning">Data Cleaning<br />
-										SQl</a></h2>
-									</header>
-									<a href="https://github.com/yadavvaibhav0143/Data_Cleaning" class="image fit"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BAwtGujIOtPaDkFm3eZIkw.jpeg" alt="" /></a>
-									<p>This project demonstrates data cleaning techniques in SQL Server using the Nashville Housing dataset. It covers standardizing data formats, handling missing values, parsing address fields, removing duplicate records, and validating each transformation.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/yadav	vaibhav0143/Data_Cleaning" class="button">View Project</a></li>
-									</ul>
-								</article>
+</div></div></section>
 
-	<article>
-    <header>		
-        <h2><a href="https://github.com/yadavvaibhav0143/Excel_DataAnalysis">Bike Buyers Analysis<br />using Excel</a></h2>
-    </header>
-    <a href="https://github.com/yadavvaibhav0143/Excel_DataAnalysis" class="image fit"><img src="https://entrepreneur.uai.ac.id/wp-content/uploads/2018/12/Motoran-Featured.jpg" alt="Bike Buyers Analysis" /></a>
-    <p>This project analyzes customer purchasing behaviour using Microsoft Excel. The analysis includes data cleaning, pivot tables, dashboards, and visualizations to identify trends in bike purchases across different customer segments.</p>
-    <ul class="actions special">
-        <li><a href="https://github.com/yadavvaibhav0143/Excel_DataAnalysis" class="button">View Project</a></li>
-    </ul>
-</article>
+<section id="skills"><div class="wrap"><div class="head"><div class="num">04 / Skills</div><div><h2>Technical BA toolbox</h2><p>Techniques and tools used across requirements analysis, process design, data analysis, and technology-focused BA work.</p></div></div>
+<div class="toolbox">
+<div class="toolgroup"><h3>Requirements &amp; Analysis</h3><div class="tools"><span class="tool">Business Requirements</span><span class="tool">Functional Requirements</span><span class="tool">BRD / FRD</span><span class="tool">User Stories</span><span class="tool">Acceptance Criteria</span><span class="tool">Stakeholder Analysis</span><span class="tool">RTM</span><span class="tool">Gap Analysis</span></div></div>
+<div class="toolgroup"><h3>Process &amp; Delivery</h3><div class="tools"><span class="tool">AS-IS / TO-BE</span><span class="tool">Process Mapping</span><span class="tool">Workflow Design</span><span class="tool">UAT</span><span class="tool">Agile / Scrum</span><span class="tool">DoR</span><span class="tool">DoD</span><span class="tool">Release &amp; Change</span></div></div>
+<div class="toolgroup"><h3>Data &amp; Technical</h3><div class="tools"><span class="tool">SQL</span><span class="tool">PostgreSQL</span><span class="tool">SQL Server</span><span class="tool">Data Modelling</span><span class="tool">ERD</span><span class="tool">Data Dictionary</span><span class="tool">REST APIs</span><span class="tool">JSON</span><span class="tool">Postman</span><span class="tool">KPI Analysis</span></div></div>
+<div class="toolgroup"><h3>Tools</h3><div class="tools"><span class="tool">Jira</span><span class="tool">Confluence</span><span class="tool">Figma</span><span class="tool">Lucidchart</span><span class="tool">Tableau</span><span class="tool">Excel</span></div></div>
+</div></div></section>
 
-<article>
-    <header>		
-        <h2><a href="https://github.com/yadavvaibhav0143/SQL-SA.portfolio">Banking Portfolio Analysis<br />using SQL</a></h2>
-    </header>
-    <!-- Replace the src URL below with a valid web link or a relative folder path -->
-    <a href="https://github.com/yadavvaibhav0143/SQL-SA.portfolio" class="image fit"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hyYwc8BUnUwlMH2Jrz6V7w.png" alt="Banking Portfolio Analysis" /></a>
-    <p>Built using SQL Server, this project analyzes banking customer performance using portfolio KPIs such as churn, customer engagement, cross-sell ratio, LTV:CAC, and year-over-year growth.</p>
-    <ul class="actions special">
-        <li><a href="https://github.com/yadavvaibhav0143/SQL-SA.portfolio" class="button">View Project</a></li>
-    </ul>
-</article>
+<section id="experience"><div class="wrap"><div class="head"><div class="num">05 / Experience</div><div><h2>Professional experience</h2><p>Professional experience presented separately from the independent case-study portfolio.</p></div></div>
+<div class="exp">
+<article class="row"><div class="date">Nov 2019 — Mar 2021</div><div><h3>Bajaj Finserv Health Ltd.</h3><div class="role">Assistant Relationship Manager</div><ul><li>Managed healthcare provider relationships and supported onboarding activities within a B2B healthcare environment.</li><li>Coordinated provider verification, customer requirements, and day-to-day relationship activities.</li><li>Worked with internal stakeholders to resolve customer issues and support operational processes.</li></ul></div></article>
+<article class="row"><div class="date">Apr 2021 — Feb 2023</div><div><h3>Bajaj Finserv Health Ltd.</h3><div class="role">Manager — Relationship Manager</div><ul><li>Managed a portfolio of healthcare customers and coordinated onboarding, verification, and operational requirements.</li><li>Worked with internal stakeholders to address customer issues and improve customer and operational processes.</li><li>Contributed to initiatives focused on customer retention, targeted engagement, and onboarding outcomes.</li></ul></div></article>
+</div></div></section>
 
-
-						<section class="split contact">
-							<section style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%;">
-								<h3>Email</h3>
-								<p><a href="#">yadavvaibhav0143@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/vaibhavrao143/" class="icon brands alt fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/yadavvaibhav0143" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<section class="contact" id="contact"><div class="wrap"><div class="head"><div class="num">06 / Contact</div><div><h2>Let's connect.</h2><p>Open to Business Analyst opportunities, project discussions, and professional networking.</p></div></div>
+<a class="email" href="mailto:yadavvaibhav0143@gmail.com">yadavvaibhav0143@gmail.com</a>
+<div class="actions"><a class="btn primary" href="https://www.linkedin.com/in/vaibhavrao143/" target="_blank">LinkedIn</a><a class="btn" href="https://github.com/yadavvaibhav0143" target="_blank">GitHub</a></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Vaibhav Yadav</span><span>Technical Business Analyst Portfolio</span></div></footer>
+</body>
 </html>
